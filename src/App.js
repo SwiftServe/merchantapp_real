@@ -6,6 +6,7 @@ import Server from "../src/Components/Server";
 import About from "../src/Components/About";
 //import Login from "../src/Components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Items from "./Components/Items";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/manager" element={<Manager />}></Route>
         <Route exact path="/server" element={<Server />}></Route>
         <Route exact path="/about" element={<About />}></Route>
+        <Route exact path="/items" element={<Items/>}></Route>
         </Routes>
     </div>
     <Footer></Footer>
